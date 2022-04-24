@@ -62,3 +62,7 @@ section {
   justify-content: flex-end;
   margin-top: 8px;
 }
+
+.hidden {
+  display: none;
+}
