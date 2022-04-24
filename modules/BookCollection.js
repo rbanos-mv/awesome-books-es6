@@ -1,7 +1,7 @@
-import Book from './Book';
-import Store from './Store';
+import Book from './Book.js';
+import Store from './Store.js';
 
-export default class BookCollection {
+class BookCollection {
   static getBooks = () => Store.getBooks();
 
   static add = (book) => {
@@ -22,3 +22,5 @@ export default class BookCollection {
     Store.setBooks(books.filter((book) => book.id !== id));
   };
 }
+
+export default BookCollection;
