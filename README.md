@@ -1,22 +1,27 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books.
-
 > Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works.
 > If you like what you see and have a project you need coded, don’t hesitate and contact me.
+
+# Awesome books.
+
+"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a medium-fidelity wireframe to build the UI.
+
+![text](./resources/awesome-1.png) ![text](./resources/awesome-2.png) ![text](./resources/awesome-3.png)
 
 ## Built With
 
 - HTML
-- JavaScript
+- CSS
+- JavaScript (using ES6 modules and classes)
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rbanos-mv.github.io/awesome-books-es6/)
 
 ### Prerequisites
 
-- Create a collection that keeps a list of books (hint: you can use an array of objects for that).
+- Create a collection that keeps a list of books.
 - Create a function to add a new book to the collection, with title and author.
 - Create a function to remove a book from the collection.
 - Display all books saved in the collection in the top part of the page.
