@@ -63,6 +63,26 @@ section {
   margin-top: 8px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  border: darkslategray 2px solid;
+  font-weight: bold;
+  font-size: 16px;
+  height: 24px;
+}
+
+button {
+  width: fit-content;
+  align-self: flex-end;
+  box-shadow: 2px 2px 2px darkslategray;
+  font-weight: bold;
+}
+
 .hidden {
   display: none;
 }
