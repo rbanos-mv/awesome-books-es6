@@ -1,7 +1,7 @@
 import BookCollection from './BookCollection.js';
 
 class UI {
-  static #bookListElement = document.querySelector('.book-list');
+  static #bookListElement = document.querySelector('.bookList');
 
   static #bookElement = document.querySelector('.book');
 
@@ -17,7 +17,7 @@ class UI {
 
   static displayBook = (book) => {
     const card = UI.#bookElement.cloneNode(true);
-    card.querySelector('.title-author').textContent = book.toString();
+    card.querySelector('#title-author').textContent = book.toString();
     const removeBtnElement = card.querySelector('button');
     removeBtnElement.value = book.id;
     removeBtnElement.onclick = UI.removeBook;
