@@ -1,3 +1,4 @@
+import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
 import BookCollection from './BookCollection.js';
 
 class UI {
@@ -14,6 +15,18 @@ class UI {
   static #bookFormMenu = document.querySelector('#bookForm');
 
   static #contactMenu = document.querySelector('#contact');
+
+  static #dateElement = document.querySelector('.date');
+
+  static displayDate = () => {
+    const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+    const dateText = now;
+    UI.#dateElement.innerHTML = dateText;
+
+    setTimeout(() => {
+      UI.displayDate();
+    }, 500);
+  };
 
   static displayBook = (book) => {
     const card = UI.#bookElement.cloneNode(true);
