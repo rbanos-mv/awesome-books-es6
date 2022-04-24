@@ -71,9 +71,12 @@ input {
 
 button {
   width: fit-content;
-  align-self: flex-end;
   box-shadow: 2px 2px 2px darkslategray;
   font-weight: bold;
+}
+
+form button {
+  align-self: flex-end;
 }
 
 .bookList {
