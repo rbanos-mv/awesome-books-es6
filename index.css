@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+h1,
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid darkslategray;
+  padding: 10px;
+}
+
+footer {
+  height: 5vh;
+}
+
+header {
+  height: 15vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 72vh;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  border: darkslategray 2px solid;
+  font-weight: bold;
+  font-size: 16px;
+  height: 24px;
+}
+
+button {
+  width: fit-content;
+  box-shadow: 2px 2px 2px darkslategray;
+  font-weight: bold;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+.bookList {
+  border: 2px solid darkslategray;
+  list-style-type: none;
+  min-height: 40px;
+  padding: 0;
+  width: 50%;
+}
+
+.bookList li { background: white; }
+
+.bookList li:nth-child(odd) { background: lightgray; }
+
+.menuList li:nth-child(even) {
+  border-left: 2px solid darkslategray;
+  border-right: 2px solid darkslategray;
+  padding: 0 10px;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  gap: 20px;
+  height: 40px;
+  padding: 8px;
+}
+
+.hidden {
+  display: none;
+}

@@ -8,6 +8,58 @@
     <title>Awesome books</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <header>
+      <nav>
+        <a href="#"><h1>Awesome Books</h1></a>
+        <ul class="menuList">
+          <li><a id="goList" href="#">List</a></li>
+          <li><a id="goForm" href="#">Add new</a></li>
+          <li><a id="goCont" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date">March 19, 2021 9:25:32 am</div>
+    </header>
+
+    <section id="bookList">
+      <h2>All awesome books</h2>
+      <ul class="bookList"></ul>
+    </section>
+
+    <section id="bookForm" class="hidden">
+      <h2>Add a new book</h2>
+      <form id="form">
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="author" placeholder="Author" />
+        <button type="button" id="addButton">Add</button>
+      </form>
+    </section>
+
+    <section id="contact" class="hidden">
+      <h2>Contact information</h2>
+      <p>
+        Do you have any questions, or do you just want to say "Hello"? <br />
+        You can reach out to us!
+      </p>
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 012345678922</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
+
+    <footer>
+      <h3>Copyright</h3>
+      <div>This is a website for education proposal only.</div>
+    </footer>
+
+    <!-- BOOK TEMPLATE (hidden) -->
+    <ul class="hidden">
+      <li class="book">
+        <p id="title-author"></p>
+        <button type="button">Remove</button>
+      </li>
+    </ul>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
