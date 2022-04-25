@@ -19,9 +19,7 @@ class UI {
   static #dateElement = document.querySelector('.date');
 
   static displayDate = () => {
-    const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
-    const dateText = now;
-    UI.#dateElement.innerHTML = dateText;
+    UI.#dateElement.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 
     setTimeout(() => {
       UI.displayDate();
